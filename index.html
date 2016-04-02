@@ -4,29 +4,56 @@
   <meta charset="utf-8">
   <title>Nieves &amp; Carl</title>
   <meta name="description" content="Wedding website for Nieves and Carl">
-  <meta name="author" content="Casey Hagen">
+  <meta name="author" content="Casey L. Hagen">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="six columns">
-        <div class="test">
-          <h1>This is a test</h1>
+      <header>
+        <div class="twelve columns text-center">
+          <h1>Nieves &amp; Carl</h1>
+          <h4>est. 08312006</h4>
+          <img id="photo" src="http://fillmurray.com/800/400" class="text-center" alt="Fill Murray.. Get it?">
+          <div id="wrapper">
+            <h4>#mrandmrsignacio</h4>
+            <h4 class="text-right">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-snapchat"></i> <!-- ... lol, no snapchat. Find one. -->
+            </h4>
+          </div>
         </div>
-      </div>
-      <div class="six columns">
-        <div class="test1">
-          <h1>This is a test</h1>
-        </div>
+      </header>
+
+      <section id="wedding" class="text-center">
+        <h2>The Wedding</h2>
+        <h5>Friday, August 19, 2016</h5>
+        <h5>7:00 PM</h5>
+      </section>
+      <div class="row">
+        <section id="reception" class="six columns text-center">
+          <div id="map"></div>
+        </section>
+
+        <section id="location" class="six columns text-center">
+          <address class="text-left">
+            <h5>Ceremony + Reception</h5>
+            <p>The Grove</p>
+            <p>8080 Al Carrison St, Las Vegas, NV 89131</p>
+          </address>
+        </section>
       </div>
     </div>
   </div>
+  <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>

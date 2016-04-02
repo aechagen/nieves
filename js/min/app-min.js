@@ -1,1 +1,1 @@
-$(document).ready(function(){$("button").click(function(){alert("Erhmagherd")})});
+function initMap(){var a=getElementById("map"),e=new google.maps.Map(a)}

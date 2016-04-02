@@ -1,7 +1,18 @@
-.test {
-  background-color: orange;
-  height: 100%; }
+@font-face {
+  font-family: "Master_of_Break";
+  src: url("../fonts/master_of_break.otf");
+  src: url("../fonts/master_of_break.ttf"); }
+h1 {
+  font-family: "master_of_break";
+  padding-top: 50px;
+  font-size: 80px; }
 
-.test1 {
-  background-color: blue;
-  height: 100%; }
+#photo {
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-bottom: 50px; }
+
+#map {
+  width: 500px;
+  height: 500px;
+  background-color: #ccc; }
