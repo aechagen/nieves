@@ -2,17 +2,8 @@
   font-family: "Master_of_Break";
   src: url("../fonts/master_of_break.otf");
   src: url("../fonts/master_of_break.ttf"); }
-h1 {
-  font-family: "master_of_break";
-  padding-top: 50px;
-  font-size: 80px; }
+body {
+  padding: 20px; }
 
-#photo {
-  margin: 0 auto;
-  border-radius: 5px;
-  padding-bottom: 50px; }
-
-#map {
-  width: 500px;
-  height: 500px;
-  background-color: #ccc; }
+h1, h2 {
+  font-family: "Master_of_Break"; }

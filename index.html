@@ -16,44 +16,61 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <header>
-        <div class="twelve columns text-center">
+      <div class="twelve columns">
+        <header class="text-center">
           <h1>Nieves &amp; Carl</h1>
-          <h4>est. 08312006</h4>
-          <img id="photo" src="http://fillmurray.com/800/400" class="text-center" alt="Fill Murray.. Get it?">
-          <div id="wrapper">
-            <h4>#mrandmrsignacio</h4>
-            <h4 class="text-right">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-instagram"></i>
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-snapchat"></i> <!-- ... lol, no snapchat. Find one. -->
-            </h4>
-          </div>
-        </div>
-      </header>
+          <p>est. 08312006</p>
+          <hr>
+          <img id="header-photo" src="images/nievesCarl.jpg" alt="Photo of Nieves &amp; Carl">
+        </header>
+      </div> <!-- .twelve columns -->
+    </div> <!-- .row -->
+    <hr>
 
-      <section id="wedding" class="text-center">
+    <div class="row">
+      <div class="six columns">
+        <h4>#mrandmrsignacio</h4>
+      </div> <!-- .six columns -->
+
+      <div class="six columns">
+        <div id="social-media">
+          <p>(Insert Social Media Icons Here)</p>
+        </div> <!-- #social-media -->
+      </div> <!-- .six columns -->
+    </div> <!-- .row -->
+    <hr>
+    <div class="row">
+      <div class="twelve columns text-center">
         <h2>The Wedding</h2>
-        <h5>Friday, August 19, 2016</h5>
-        <h5>7:00 PM</h5>
-      </section>
-      <div class="row">
-        <section id="reception" class="six columns text-center">
-          <div id="map"></div>
-        </section>
+        <p>Friday, August 19, 2016</p>
+        <p>7:00 PM</p>
+      </div> <!-- .twelve columns -->
+    </div> <!-- .row -->
+    <hr>
 
-        <section id="location" class="six columns text-center">
-          <address class="text-left">
-            <h5>Ceremony + Reception</h5>
-            <p>The Grove</p>
-            <p>8080 Al Carrison St, Las Vegas, NV 89131</p>
-          </address>
-        </section>
-      </div>
-    </div>
-  </div>
-  <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    <div class="row">
+      <div class="six columns">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12860.71045504614!2d-115.2733475!3d36.3079995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd8c3044c7265cd6!2sThe+Grove!5e0!3m2!1sen!2sus!4v1459627660950" width="400px" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div> <!-- #map -->
+      </div> <!-- .six columns -->
+      <div class="six columns">
+        <h2>Ceremony &amp; Reception</h2>
+        <address>
+          The Grove<br>
+          8080 Al Carrison St, Las Vegas, NV 89131<br>
+        </address>
+      </div> <!-- .six columns -->
+    </div> <!-- .row -->
+    <hr>
+
+    <div class="row">
+      <div class="twelve columns">
+        <p>(Insert RSVP form here)</p>
+      </div> <!-- .twelve columns -->
+    </div> <!-- .row -->
+
+  </div> <!-- .container-fluid -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
