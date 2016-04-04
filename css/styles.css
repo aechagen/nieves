@@ -1,9 +1,0 @@
-@font-face {
-  font-family: "Master_of_Break";
-  src: url("../fonts/master_of_break.otf");
-  src: url("../fonts/master_of_break.ttf"); }
-body {
-  padding: 20px; }
-
-h1, h2 {
-  font-family: "Master_of_Break"; }
