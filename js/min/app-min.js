@@ -1,1 +1,1 @@
-function initMap(){var a=getElementById("map"),e=new google.maps.Map(a)}
+$(".open-lightbox").colorbox({inline:!0,href:"#wufoo-z13nqwk707h2uju iframe",height:"80%",width:"80%"}),$(".inline").colorbox({inline:!0,href:"#honeyFund",height:"80%",width:"80%"});

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/jquery-colorbox/example1/colorbox.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="bower_components/fa-snapchat/fa-snapchat.css">
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
@@ -21,7 +22,7 @@
     <div class="row">
       <div class="twelve columns">
         <header class="text-center">
-          <h1>Nieves &amp; Carl</h1>
+          <h1 class="p-small">Nieves &amp; Carl</h1>
           <p><em>est. 08312006</em></p>
           <hr>
           <img id="header-photo" src="images/nievesCarl.jpg" alt="Photo of Nieves &amp; Carl">
@@ -60,40 +61,61 @@
     <div class="row">
       <div class="six columns">
         <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12860.71045504614!2d-115.2733475!3d36.3079995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd8c3044c7265cd6!2sThe+Grove!5e0!3m2!1sen!2sus!4v1459627660950" width="400px" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12860.71045504614!2d-115.2733475!3d36.3079995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd8c3044c7265cd6!2sThe+Grove!5e0!3m2!1sen!2sus!4v1459627660950" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div> <!-- #map -->
       </div> <!-- .six columns -->
+
       <div class="six columns">
-        <h2>Ceremony &amp; Reception</h2>
-        <address>
-          The Grove<br>
-          8080 Al Carrison St<br>
-          Las Vegas, NV 89131<br>
-        </address>
+        <section id="directions">
+          <div id="ceremony">
+            <h2>Ceremony &amp; Reception</h2>
+            <address>
+              The Grove<br>
+              8080 Al Carrison St<br>
+              Las Vegas, NV 89131<br>
+            </address>
+          </div> <!-- #ceremony -->
+        </section>
       </div> <!-- .six columns -->
     </div> <!-- .row -->
     <hr>
 
     <div class="row">
       <div class="twelve columns text-center">
-        <a class="button" href="#openModal">RSVP Here</a>
-        <div id="openModal" class="modalDialog">
-          <div id="closeGoesHere">
-            <a href="#closeGoesHere" title="close" class="close">X</a>
-            <h5>RSVP at the link below:</h5>
-            <a href="https://aechagen.wufoo.com/forms/z13nqwk707h2uju/">RSVP</a>
-          </div> <!-- #closeGoesHere -->
-        </div> <!-- #openModal -->
-        
-        <div class="tooltip-container">
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=clopezhagen%40gmail%2ecom&lc=US&item_name=Nieves%20and%20Carl%27s%20HoneyFund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest" class="button">"Honey" Fund</a>
-        </div> <!-- .tooltip-container -->
-        <span class="tooltip">This is an explanation about the Honey Fund...</span>
+        <a href="#wufoo-z13nqwk707h2uju" class="button open-lightbox cBoxElement">RSVP</a>
+          <div id="wufoo-z13nqwk707h2uju">
+          Fill out my <a href="https://aechagen.wufoo.com/forms/z13nqwk707h2uju">online form</a>.
+          </div>
+          <script type="text/javascript">var z13nqwk707h2uju;(function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'aechagen',
+          'formHash':'z13nqwk707h2uju',
+          'autoResize':true,
+          'height':'653',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { z13nqwk707h2uju = new WufooForm();z13nqwk707h2uju.initialize(options);z13nqwk707h2uju.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');</script>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=clopezhagen%40gmail%2ecom&lc=US&item_name=Nieves%20and%20Carl%27s%20HoneyFund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest" class="button inline">HoneyFund</a>
+        <div style="display:none">
+          <div id="honeyFund">
+            <h4>HoneyFund</h4>
+            <p>Explanation about what a Honey Fund is goes here..</p>
+            <p>Test to see what the line breaks look like.</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=clopezhagen%40gmail%2ecom&lc=US&item_name=Nieves%20and%20Carl%27s%20HoneyFund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest">Donate now!</a>
+          </div>
+        </div> 
       </div> <!-- .twelve columns -->
     </div> <!-- .row -->
-    
   </div> <!-- .container-fluid -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-colorbox/jquery.colorbox-min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
