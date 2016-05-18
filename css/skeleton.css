@@ -432,6 +432,11 @@ there.
   .social-media {
     float: left;
   }
+
+  #header-photo {
+    max-width: 50%;
+    box-sizing: border-box;
+  }
 }
 
 /* Larger than desktop */
